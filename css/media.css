@@ -1,0 +1,115 @@
+@media (max-width: 1330px) {
+    .app-content{
+        height: 100%;
+        align-items: center;
+    }
+    .credit-content{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 1172px) {
+    .course{
+        justify-content: center;
+        text-align: center;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+    .header-content{
+        justify-content: center;
+        text-align: center;
+    }
+}
+@media (max-width: 972px) {
+    .best{
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        
+    }
+    .best-content p{
+        justify-content: center;
+    }
+    .header-nav-list{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        position: fixed;
+        left: 0;
+        top: -100%;
+        background: rgba(0, 0, 0, 0.487);
+        min-height: 100vh;
+        width: 100%;
+        z-index: 1;
+        align-items: center;
+        justify-content: center;
+        transition: 500ms;
+    }
+    .header-nav-list__link{
+        color: white;
+        font-size: 25px;
+    }
+    .burger{
+        display: block;
+        visibility: visible;
+        width: 5%;
+        position: absolute;
+        right: 2%;
+        z-index: 2;
+    }
+    .burger img{
+        width: 100%;
+    }
+    .burger:hover ~ .header-nav-list{
+        top: 0;
+    }
+    .course-content{
+        justify-content: center;
+    }
+    .app-btns a{
+        flex-wrap: wrap;
+        margin: 10px 0;
+    }
+}
+@media (max-width: 640px) {
+    .header-content > img{
+        width: 100%;
+    }
+    .course > img{
+        width: 100%;
+    }
+    .app-content-card{
+        flex-wrap: wrap;
+    }
+    .best img{
+        width: 100%;
+    }
+    .app-content-card:first-child img{
+        width: 100%;
+    }
+    .header-content-btns{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+@media (max-width:425px) {
+    .app-content-card{
+        height: 100%;
+        padding: 30px 0;
+        font-size: 18px;
+        text-align: center;
+    }
+    .app-content-card:first-child{
+        padding-bottom: 0;
+    }
+    .header-content-btns img{
+        width: 100%;
+    }
+    .header-content-btns a{
+        padding: 10px 50px;
+    }
+}
